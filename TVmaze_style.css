@@ -1,0 +1,236 @@
+header {
+  background-color: #393333;
+}
+header section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background-color: #393333;
+}
+header section .logo-search {
+  display: flex;
+  flex: 7;
+  justify-content: flex-start;
+  align-items: center;
+}
+header section .logo-search .input1 {
+  margin-left: 20px;
+  position: relative;
+}
+header section .logo-search .input1 input {
+  height: 51px;
+  width: 400px;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  padding-left: 15px;
+  margin-right: 0 auto;
+}
+header section .logo-search .input1 .submit {
+  height: 50px;
+  width: 80px;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  background-color: teal;
+  margin-left: 0 auto;
+}
+header section .logo-search .input1 .submit:hover {
+  filter: brightness(150%);
+}
+header section .logo-search .input1 .submit .icon-search {
+  color: white;
+}
+header section .user_tools {
+  display: flex;
+  justify-content: flex-end;
+  flex: 2;
+}
+header section .user_tools a {
+  color: white;
+  font-size: 20px;
+}
+header section .user_tools a:hover {
+  color: teal;
+}
+header nav {
+  background-color: teal;
+}
+header nav .menu {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+header nav .menu li {
+  color: white;
+  padding: 15px;
+}
+header nav .menu li:hover {
+  background-color: #393333;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+}
+.main .shows {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  order: 1;
+}
+.main .shows .element {
+  display: grid;
+  grid-template-areas: "thumbnail thumbnail" "title title" "heart star";
+  background-color: teal;
+  margin-bottom: 30px;
+}
+.main .shows .element h4 {
+  grid-area: title;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  padding: 10px;
+  font-weight: normal;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+.main .shows .element h4:hover {
+  text-decoration: underline;
+  color: white;
+}
+.main .shows .element img {
+  grid-area: thumbnail;
+}
+.main .shows .element span[class^=icon] {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  padding: 10px;
+}
+.main .shows .element span[class^=icon]:hover {
+  color: white;
+  filter: brightness(300%);
+}
+.main .shows .element .icon-heart {
+  grid-area: heart;
+}
+.main .shows .element .icon-star-full {
+  grid-area: star;
+}
+
+.aside {
+  width: 200px;
+  margin-left: 25px;
+  align-items: flex-start;
+  order: 2;
+}
+@media all and (max-width: 700px) {
+  .aside {
+    width: 100px;
+  }
+}
+@media all and (max-width: 600px) {
+  .aside {
+    display: none;
+  }
+}
+.aside select {
+  padding: 10px;
+  width: 160px;
+  margin-bottom: 30px;
+}
+
+.footer_pages {
+  padding-left: 110px;
+}
+
+.pages {
+  display: flex;
+}
+.pages li {
+  color: black;
+  list-style: none;
+  padding: 10px;
+}
+.pages li:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.footer_menu {
+  border-top: 1px solid grey;
+  margin-left: 110px;
+  margin-right: 110px;
+  display: flex;
+}
+.footer_menu a {
+  font-size: 16px;
+  color: teal;
+}
+.footer_menu a:hover {
+  text-decoration: underline;
+}
+.footer_menu .footer_left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  font-size: 20px;
+  justify-content: space-around;
+  /* brightness?? */
+}
+.footer_menu .footer_left .footer_menu span[class*=icon]:hover {
+  color: teal;
+}
+.footer_menu .footer_left .footer_left_bottom {
+  display: flex;
+  align-items: center;
+}
+.footer_menu .footer_left .footer_left > span {
+  font-size: 16px;
+}
+.footer_menu .footer_right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-around;
+}
+.footer_menu .footer_right .footer_right_top {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer_menu .footer_right .footer_right_top > a {
+  font-size: 20px;
+}
+.footer_menu .footer_right .footer_right_bottom {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+#ad {
+  position: relative;
+  left: 300px;
+  padding: 10px;
+}
+
+h1 {
+  margin: 0 auto;
+  text-align: left;
+}
+
+/*# sourceMappingURL=TVmaze_style.css.map */
