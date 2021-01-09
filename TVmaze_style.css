@@ -86,6 +86,7 @@ header nav .menu li:hover {
   grid-template-areas: "thumbnail thumbnail" "title title" "heart star";
   background-color: teal;
   margin-bottom: 30px;
+  max-width: 210px;
 }
 .main .shows .element h4 {
   grid-area: title;

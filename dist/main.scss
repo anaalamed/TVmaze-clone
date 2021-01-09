@@ -16,6 +16,7 @@ $gap-width: 10px;
                     "heart star";
             background-color: teal;
             margin-bottom: 30px;
+            max-width: 210px;
 
             h4 {
                 grid-area: title;
@@ -33,7 +34,6 @@ $gap-width: 10px;
 
             img {
                 grid-area: thumbnail;
-                // max-width: 100px;
             }
 
             span[class^='icon'] {
