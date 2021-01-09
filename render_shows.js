@@ -1,9 +1,9 @@
 function render_show(show = {}) {
     return `<div class='element'>
-    <h4>${show.name}</h4>
-    <img src=${show.link_image}>
+    <h4>${show.show.name}</h4>
+    <img src=${show.show.image.medium}>
     <span class='icon-heart'></span>
-    <span class='icon-star-full'>${show.star}</span>
+    <span class='icon-star-full'>${show.show.rating.average}</span>
 </div>`;
 }
 

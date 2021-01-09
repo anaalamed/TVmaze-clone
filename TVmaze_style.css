@@ -80,6 +80,7 @@ header nav .menu li:hover {
   justify-content: space-between;
   flex-wrap: wrap;
   order: 1;
+  max-height: 200px;
 }
 .main .shows .element {
   display: grid;
