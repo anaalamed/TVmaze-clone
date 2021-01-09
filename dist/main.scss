@@ -5,6 +5,9 @@ $gap-width: 10px;
     
     .shows {
         display: flex;
+        // display: grid;
+        // grid-gap: 10px;
+        // grid-template-areas: 'element element element element element';
         justify-content: space-between;
         flex-wrap: wrap;
         order: 1;
@@ -12,6 +15,7 @@ $gap-width: 10px;
 
 
         .element {
+            // grid-area: 'element';
             display: grid;
             grid-template-areas: "thumbnail thumbnail"
                     "title title"

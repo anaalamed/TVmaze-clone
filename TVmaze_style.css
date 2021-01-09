@@ -122,9 +122,10 @@ header nav .menu li:hover {
 
 .aside {
   width: 200px;
-  margin-left: 25px;
+  margin-left: auto;
   align-items: flex-start;
   order: 2;
+  padding-left: 20px;
 }
 @media all and (max-width: 700px) {
   .aside {
