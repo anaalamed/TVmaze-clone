@@ -7,7 +7,7 @@
     <title>TVmaze Ana</title>
     <link rel='stylesheet' href='style.css'>
     <link rel='stylesheet' href='TVmaze_style.css'>
-    <script src="main.js" type="module"></script>
+    <script src="js/main.js" type="module"></script>
     <style>
     </style>
 </head>
@@ -18,9 +18,10 @@
             <div class='logo-search'>
                 <img src='http://static.tvmaze.com/images/tvm-header-logo.png'>
                 <div class="input1">
-                    <form method="GET" action="https://www.tvmaze.com/search" target="_blank">
-                        <input type="search" name="q" placeholder="Search Shows and People"><button class='submit'
-                            type="submit"><span class='icon-search'></span></button>
+                    <!-- <form method="GET" action="https://www.tvmaze.com/search" target="_blank"> -->
+                    <form id="search">
+                        <input id="search-input" type="search" name="q" placeholder="Search Shows and People"><button
+                            class='submit' type="submit"><span class='icon-search'></span></button>
                     </form>
                 </div>
             </div>
@@ -51,7 +52,6 @@
         <h1>Shows</h1>
         <div class="main">
             <div class="shows">
-            
             </div>
 
             <div class="aside">

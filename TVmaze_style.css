@@ -81,12 +81,17 @@ header nav .menu li:hover {
   flex-wrap: wrap;
   order: 1;
   max-height: 200px;
+
 }
 .main .shows .element {
   display: grid;
   grid-template-areas: "thumbnail thumbnail" "title title" "heart star";
   background-color: teal;
   margin-bottom: 30px;
+  max-width: 210px;
+}
+
+.main .shows .element img {
   max-width: 210px;
 }
 .main .shows .element h4 {
