@@ -3,7 +3,7 @@ function render_show(show = {}) {
     <h4>${show.show.name}</h4>
     <img src=${show.show.image?.medium || 'https://static.tvmaze.com/images/no-img/no-img-portrait-text.png'}>
     <span class='icon-heart'></span>
-    <span class='icon-star-full'>${show.show.rating.average}</span>
+    <span class='icon-star-full'>${show.show.rating.average || null}</span>
 </div>`;
 }
 
