@@ -80,7 +80,7 @@ header nav .menu li:hover {
   justify-content: space-between;
   flex-wrap: wrap;
   order: 1;
-  max-height: 200px;
+  max-height: max-content;
 }
 .main .shows .element {
   display: grid;
@@ -88,16 +88,21 @@ header nav .menu li:hover {
   background-color: teal;
   margin-bottom: 30px;
   max-width: 210px;
+  max-height: 380px;
+  margin: 15px;
 }
 .main .shows .element h4 {
   grid-area: title;
-  color: rgba(255, 255, 255, 0.6);
   margin: 0;
   padding: 10px;
   font-weight: normal;
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
-.main .shows .element h4:hover {
+.main .shows .element a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+.main .shows .element a:hover {
   text-decoration: underline;
   color: white;
 }

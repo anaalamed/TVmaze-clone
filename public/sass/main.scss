@@ -11,7 +11,8 @@ $gap-width: 10px;
         justify-content: space-between;
         flex-wrap: wrap;
         order: 1;
-        max-height: 200px;
+        max-height: max-content;
+        // min-height: min-content;
 
 
         .element {
@@ -23,21 +24,26 @@ $gap-width: 10px;
             background-color: teal;
             margin-bottom: 30px;
             max-width: 210px;
+            max-height: 380px;
+            margin: 15px;
 
             h4 {
                 grid-area: title;
-                color: $white_color;
                 margin: 0;
                 padding: $gap-width;
                 font-weight: normal;
-                border-bottom: 1px solid $white_color;
-
+                border-bottom: 1px solid $white_color;   
+            }
+            
+            a {
+                color: $white_color;
+                text-decoration: none;
                 &:hover {
-                     text-decoration: underline;
-                     color: white;
+                    text-decoration: underline;
+                    color: white;
                 }
             }
-
+            
             img {
                 grid-area: thumbnail;
             }
